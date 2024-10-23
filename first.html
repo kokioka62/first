@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>ブログサイト</title>
+    <style>
+        /* スタイルをここに追加 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ブログサイトへようこそ</h1>
+    </header>
+    <main>
+        <article>
+            <h2>ブログ記事タイトル</h2>
+            <p>ここにブログ記事の内容が入ります。</p>
+        </article>
+        <!-- ブログ作成フォームを追加 -->
+        <section>
+            <h2>新しいブログ記事を作成</h2>
+            <form id="blogForm">
+                <label for="title">タイトル:</label>
+                <input type="text" id="title" name="title" required>
+                <br>
+                <label for="content">内容:</label>
+                <textarea id="content" name="content" required></textarea>
+                <br>
+                <button type="submit">投稿</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 ブログサイト</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
